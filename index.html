@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#245cff">
+  <meta name="description" content="Business-in-a-Box — your business, configured in minutes.">
+  <title>Business-in-a-Box — Business OS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+  <div id="app">
+    <header class="topbar">
+      <button class="mobile-menu icon-btn" id="mobile-menu" aria-label="Open navigation">☰</button>
+      <a class="brand" href="#dashboard" aria-label="Business-in-a-Box home">
+        <span class="brand-mark">◆</span><span><strong>Business-in-a-Box</strong><small>Your Business. All in One Place.</small></span>
+      </a>
+      <label class="global-search"><span>⌕</span><input id="global-search" placeholder="Search anything… (customers, invoices, bookings)"><kbd>Ctrl K</kbd></label>
+      <div class="top-actions"><button class="icon-btn" id="notifications" title="Notifications">♧<i></i></button><button class="profile" id="profile-menu"><span class="avatar avatar-small">AC</span><span><b id="profile-name">Business Owner</b><small>Business Owner</small></span><span>⌄</span></button></div>
+    </header>
+    <div class="shell">
+      <aside class="sidebar" id="sidebar">
+        <nav id="main-nav" aria-label="Main navigation"></nav>
+        <section class="upgrade-card" id="upgrade-card">
+          <div class="upgrade-icon">♛</div><b>Upgrade your business</b>
+          <p>Unlock advanced features, more users and higher limits.</p>
+          <button class="btn btn-primary btn-full" data-view="pricing">View plans</button>
+          <button class="quiet-link" id="hide-promo">Hide this promotion</button>
+        </section>
+        <div class="sidebar-footer"><span class="brand-mark">◆</span><span><b>Business-in-a-Box</b><small>Your Business. All in One Place.</small></span></div>
+      </aside>
+      <main id="main-content" tabindex="-1"></main>
+    </div>
+    <nav class="mobile-bottom" id="mobile-bottom" aria-label="Mobile navigation"></nav>
+  </div>
+  <dialog id="modal" class="modal"><form method="dialog" id="modal-form"><div class="modal-head"><h2 id="modal-title">New item</h2><button class="icon-btn" type="button" data-modal-close aria-label="Close dialog" title="Close">✕</button></div><div id="modal-body"></div><div class="modal-actions"><button class="btn btn-ghost" type="button" data-modal-close>Cancel</button><button class="btn btn-primary" id="modal-save" type="submit" value="default">Save</button></div></form></dialog>
+  <script src="app.js"></script>
+</body>
+</html>

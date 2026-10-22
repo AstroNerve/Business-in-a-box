@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#245cff">
+  <title>Create account — Business-in-a-Box</title><link rel="stylesheet" href="auth.css"><script src="auth.js" defer></script>
+</head>
+<body><main class="auth-shell">
+  <a class="brand" href="index.html" aria-label="Business-in-a-Box home"><span class="brand-mark">◆</span><span><strong>Business-in-a-Box</strong><small>Your Business. All in One Place.</small></span></a>
+  <section class="auth-card" aria-labelledby="page-title"><div class="eyebrow">GET STARTED</div><h1 id="page-title">Create your workspace</h1><p class="intro">Set up your account and start organising your business in one place.</p>
+    <div id="auth-message" class="message" role="status" aria-live="polite" hidden></div>
+    <form id="register-form" novalidate>
+      <label for="name">Your full name</label><input id="name" name="name" autocomplete="name" placeholder="e.g. Alex Carter" required>
+      <label for="company">Business name</label><input id="company" name="company" autocomplete="organization" placeholder="e.g. Acme Solutions" required>
+      <label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@yourbusiness.com" required>
+      <label for="password">Create a password</label><div class="password-wrap"><input id="password" name="password" type="password" autocomplete="new-password" minlength="10" placeholder="At least 10 characters" required><button type="button" class="show-password" data-toggle-password="password" aria-label="Show password">Show</button></div>
+      <p class="field-note">Use at least 10 characters.</p><button class="primary-button" type="submit" id="submit-button">Create account <span aria-hidden="true">→</span></button>
+    </form><p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p><div class="auth-foot"><span class="shield">✓</span> Your account is stored by the local development server.</div>
+  </section><footer>© 2026 Business-in-a-Box <span>·</span> <a href="index.html">Back to app preview</a></footer>
+</main></body></html>

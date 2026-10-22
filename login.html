@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#245cff">
+  <meta name="description" content="Sign in to your Business-in-a-Box workspace.">
+  <title>Log in — Business-in-a-Box</title>
+  <link rel="stylesheet" href="auth.css">
+  <script src="auth.js" defer></script>
+</head>
+<body>
+  <main class="auth-shell">
+    <a class="brand" href="index.html" aria-label="Business-in-a-Box home"><span class="brand-mark">◆</span><span><strong>Business-in-a-Box</strong><small>Your Business. All in One Place.</small></span></a>
+    <section class="auth-card" aria-labelledby="page-title">
+      <div class="eyebrow">WELCOME BACK</div>
+      <h1 id="page-title">Log in to your workspace</h1>
+      <p class="intro">Pick up where you left off and keep your business moving.</p>
+      <div id="auth-message" class="message" role="status" aria-live="polite" hidden></div>
+      <form id="login-form" novalidate>
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" autocomplete="username" placeholder="you@yourbusiness.com" required>
+        <label for="password">Password</label>
+        <div class="password-wrap"><input id="password" name="password" type="password" autocomplete="current-password" placeholder="Your password" required><button type="button" class="show-password" data-toggle-password="password" aria-label="Show password">Show</button></div>
+        <button class="primary-button" type="submit" id="submit-button">Log in <span aria-hidden="true">→</span></button>
+      </form>
+      <p class="auth-switch">New to Business-in-a-Box? <a href="register.html">Create an account</a></p>
+      <div class="auth-foot"><span class="shield">✓</span> Your workspace is protected by your account session.</div>
+    </section>
+    <footer>© 2026 Business-in-a-Box <span>·</span> <a href="index.html">Back to app preview</a></footer>
+  </main>
+</body>
+</html>
